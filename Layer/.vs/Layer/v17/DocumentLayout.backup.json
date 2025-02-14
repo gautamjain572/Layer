@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\.NET\\Layer\\Layer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9DD546BD-1EC3-494E-B29C-298C4FF9DC0D}|Layer.csproj|d:\\projects\\.net\\layer\\layer\\controllers\\interncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DD546BD-1EC3-494E-B29C-298C4FF9DC0D}|Layer.csproj|solutionrelative:controllers\\interncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5428B611-9CE5-4602-AA7B-239AD75804B3}|..\\BusinessLayer\\BusinessLayer.csproj|d:\\projects\\.net\\layer\\businesslayer\\services\\internsbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88F07BC-AB2D-4712-B886-18C2E897AECF}|..\\CommonLayer\\CommonLayer.csproj|d:\\projects\\.net\\layer\\commonlayer\\outputresponce\\internresponce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5428B611-9CE5-4602-AA7B-239AD75804B3}|..\\BusinessLayer\\BusinessLayer.csproj|d:\\projects\\.net\\layer\\businesslayer\\interfaces\\iinternbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IInternBL.cs",
+              "DocumentMoniker": "D:\\Projects\\.NET\\Layer\\BusinessLayer\\Interfaces\\IInternBL.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLayer\\Interfaces\\IInternBL.cs",
+              "ToolTip": "D:\\Projects\\.NET\\Layer\\BusinessLayer\\Interfaces\\IInternBL.cs",
+              "RelativeToolTip": "..\\BusinessLayer\\Interfaces\\IInternBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T16:41:02.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InternResponce.cs",
+              "DocumentMoniker": "D:\\Projects\\.NET\\Layer\\CommonLayer\\OutputResponce\\InternResponce.cs",
+              "RelativeDocumentMoniker": "..\\CommonLayer\\OutputResponce\\InternResponce.cs",
+              "ToolTip": "D:\\Projects\\.NET\\Layer\\CommonLayer\\OutputResponce\\InternResponce.cs",
+              "RelativeToolTip": "..\\CommonLayer\\OutputResponce\\InternResponce.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T16:38:35.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InternsBL.cs",
+              "DocumentMoniker": "D:\\Projects\\.NET\\Layer\\BusinessLayer\\Services\\InternsBL.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLayer\\Services\\InternsBL.cs",
+              "ToolTip": "D:\\Projects\\.NET\\Layer\\BusinessLayer\\Services\\InternsBL.cs",
+              "RelativeToolTip": "..\\BusinessLayer\\Services\\InternsBL.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAcwJcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T16:37:56.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InternController.cs",
+              "DocumentMoniker": "D:\\Projects\\.NET\\Layer\\Layer\\Controllers\\InternController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InternController.cs",
+              "ToolTip": "D:\\Projects\\.NET\\Layer\\Layer\\Controllers\\InternController.cs",
+              "RelativeToolTip": "Controllers\\InternController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T16:37:21.646Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

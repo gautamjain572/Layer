@@ -1,0 +1,12 @@
+D:\Projects\.NET\Layer\RepositoryLayer\bin\Debug\net7.0\RepositoryLayer.deps.json
+D:\Projects\.NET\Layer\RepositoryLayer\bin\Debug\net7.0\RepositoryLayer.dll
+D:\Projects\.NET\Layer\RepositoryLayer\bin\Debug\net7.0\RepositoryLayer.pdb
+D:\Projects\.NET\Layer\RepositoryLayer\obj\Debug\net7.0\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\.NET\Layer\RepositoryLayer\obj\Debug\net7.0\RepositoryLayer.AssemblyInfoInputs.cache
+D:\Projects\.NET\Layer\RepositoryLayer\obj\Debug\net7.0\RepositoryLayer.AssemblyInfo.cs
+D:\Projects\.NET\Layer\RepositoryLayer\obj\Debug\net7.0\RepositoryLayer.csproj.CoreCompileInputs.cache
+D:\Projects\.NET\Layer\RepositoryLayer\obj\Debug\net7.0\RepositoryLayer.dll
+D:\Projects\.NET\Layer\RepositoryLayer\obj\Debug\net7.0\refint\RepositoryLayer.dll
+D:\Projects\.NET\Layer\RepositoryLayer\obj\Debug\net7.0\RepositoryLayer.pdb
+D:\Projects\.NET\Layer\RepositoryLayer\obj\Debug\net7.0\ref\RepositoryLayer.dll
+D:\Projects\.NET\Layer\RepositoryLayer\obj\Debug\net7.0\RepositoryLayer.csproj.AssemblyReference.cache
