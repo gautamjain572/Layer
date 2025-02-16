@@ -150,6 +150,83 @@
           }
         }
       }
+    },
+    "/api/Intern/assign-skill": {
+      "put": {
+        "tags": [
+          "Intern"
+        ],
+        "parameters": [
+          {
+            "name": "internId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "skillIds",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjectResponce"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjectResponce"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjectResponce"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Intern/get-study-fields": {
+      "get": {
+        "tags": [
+          "Intern"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/StudyFieldsListResponce"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StudyFieldsListResponce"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StudyFieldsListResponce"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -276,6 +353,41 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Skills"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "StudyFields": {
+        "type": "object",
+        "properties": {
+          "studyFeildId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "studyFeildName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "StudyFieldsListResponce": {
+        "type": "object",
+        "properties": {
+          "suceess": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StudyFields"
             },
             "nullable": true
           }

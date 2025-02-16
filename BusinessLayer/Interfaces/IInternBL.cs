@@ -14,6 +14,9 @@ namespace BusinessLayer.Interfaces
         Task<Responce<List<InternsOfXPIndia>>> GetInternsOfXPIndia();
         Task<Responce<List<Skills>>> GetSkills();
         Task<Responce<object>> AddIntern(InternsOfXPIndia internsOfXPIndia);
-        Task<Responce<object>> RemoveIntern(long? id);  
+        Task<Responce<object>> RemoveIntern(long? id);
+        Task<Responce<object>> AssignSkillsToIntern(long? intern_id, string skill_ids);
+
+        Task<Responce<List<StudyFields>>> GetStudyFields();
     }
 }

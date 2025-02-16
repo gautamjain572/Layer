@@ -19,5 +19,11 @@ namespace RepositoryLayer.Interfaces
         Task<int> InsertInternAsync(string? intern_name, decimal? salary, string? email, string? mobile_number, DateTime? joining_date, bool? internship_status, decimal? gpa, int? perfomance_rating, int? working_hours, long? study_field_id, OutputParameter<bool?> isInternAdded, OutputParameter<string> internAddedStatus, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         // delete api
         Task<int> SoftDeleteAsync(long? intern_id, OutputParameter<bool?> isInterndeleted, OutputParameter<string> interndeletedStatus, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+
+        // put api
+        Task<int> AssignSkillsToInternAsync(long? intern_id, string skill_ids, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+
+        //get api
+        Task<List<DatabaseModels.GetAllStudyFieldsResult>> GetAllStudyFieldsAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
     }
 }

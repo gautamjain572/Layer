@@ -29,4 +29,10 @@ namespace RepositoryLayer.DatabaseModels
         public long skill_id { get; set; }
         public string skill_name { get; set; }
     }
+
+    public partial class GetAllStudyFieldsResult
+    {
+        public long study_field_id { get; set; }
+        public string study_field_name { get; set; }
+    }
 }

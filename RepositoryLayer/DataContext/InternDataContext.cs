@@ -18,6 +18,7 @@ namespace RepositoryLayer.DataContext
         {
             modelBuilder.Entity<GetAllInternsResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<GetAllSkillsResult>().HasNoKey().ToView(null);
+            modelBuilder.Entity<GetAllStudyFieldsResult>().HasNoKey().ToView(null);
         }
     }
 }

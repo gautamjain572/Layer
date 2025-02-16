@@ -9,3 +9,4 @@ D:\Projects\.NET\Layer\CommonLayer\obj\Debug\net7.0\CommonLayer.dll
 D:\Projects\.NET\Layer\CommonLayer\obj\Debug\net7.0\refint\CommonLayer.dll
 D:\Projects\.NET\Layer\CommonLayer\obj\Debug\net7.0\CommonLayer.pdb
 D:\Projects\.NET\Layer\CommonLayer\obj\Debug\net7.0\ref\CommonLayer.dll
+D:\Projects\.NET\Layer\CommonLayer\obj\Debug\net7.0\CommonLayer.sourcelink.json

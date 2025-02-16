@@ -215,5 +215,59 @@ namespace RepositoryLayer.Services
             return _;
         }
 
+        //put api
+        public virtual async Task<int> AssignSkillsToInternAsync(long? intern_id, string skill_ids, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        {
+            var parameterreturnValue = new SqlParameter
+            {
+                ParameterName = "returnValue",
+                Direction = System.Data.ParameterDirection.Output,
+                SqlDbType = System.Data.SqlDbType.Int,
+            };
+
+            var sqlParameters = new[]
+            {
+                new SqlParameter
+                {
+                    ParameterName = "intern_id",
+                    Value = intern_id ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.BigInt,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "skill_ids",
+                    Size = -1,
+                    Value = skill_ids ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.VarChar,
+                },
+                parameterreturnValue,
+            };
+            var _ = await _internDataContext.Database.ExecuteSqlRawAsync("EXEC @returnValue = [dbo].[AssignSkillsToIntern] @intern_id = @intern_id, @skill_ids = @skill_ids", sqlParameters, cancellationToken);
+
+            returnValue?.SetValue(parameterreturnValue.Value);
+
+            return _;
+        }
+
+
+        public virtual async Task<List<DatabaseModels.GetAllStudyFieldsResult>> GetAllStudyFieldsAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        {
+            var parameterreturnValue = new SqlParameter
+            {
+                ParameterName = "returnValue",
+                Direction = System.Data.ParameterDirection.Output,
+                SqlDbType = System.Data.SqlDbType.Int,
+            };
+
+            var sqlParameters = new[]
+            {
+                parameterreturnValue,
+            };
+            var _ = await _internDataContext.SqlQueryAsync<DatabaseModels.GetAllStudyFieldsResult>("EXEC @returnValue = [dbo].[GetAllStudyFields]", sqlParameters, cancellationToken);
+
+            returnValue?.SetValue(parameterreturnValue.Value);
+
+            return _;
+        }
     }
 }

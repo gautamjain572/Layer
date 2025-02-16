@@ -46,6 +46,20 @@ namespace Layer.Controllers
             return deleteResponce;
         }
 
+        [HttpPut("assign-skill")]
+        public async Task<Responce<object>> AssignSkillsToIntern(long? internId, string skillIds)
+        {
+            Responce<object> assignSkillResponce = await _internsBL.AssignSkillsToIntern(internId, skillIds);
+            return assignSkillResponce;
+        }
+
+        [HttpGet("get-study-fields")]
+        public async Task<Responce<List<StudyFields>>> GetStudyFields()
+        {
+            Responce<List<StudyFields>> studyFields = await _internsBL.GetStudyFields();
+            return studyFields;
+        }
+
         // old code
         //[HttpPost("get-bank-detail")]
         //public BankAccountResponse ApplicationForBank(BankAccountDetails bankAccountDetails)

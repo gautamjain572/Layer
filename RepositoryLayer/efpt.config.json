@@ -15,7 +15,7 @@
    "T4TemplatePath": null,
    "Tables": [
       {
-         "Name": "[dbo].[SoftDelete]",
+         "Name": "[dbo].[GetAllStudyFields]",
          "ObjectType": 1
       }
    ],

@@ -27,6 +27,12 @@ namespace CommonLayer.InternModels
         public string? SkillName { get; set; }
     }
 
+    public class StudyFields
+    {
+        public long? studyFeildId { get; set; }
+        public string? StudyFeildName { get; set; }
+    }
+
 }
 
 

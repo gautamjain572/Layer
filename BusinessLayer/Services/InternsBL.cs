@@ -176,5 +176,62 @@ namespace BusinessLayer.Services
             }
             return deleteResponce;
         }
+
+        //put api
+        public async Task<Responce<object>> AssignSkillsToIntern(long? intern_id, string skill_ids)
+        {
+           Responce<object> assignSkillsResponce = new Responce<object>();
+            try
+            {
+                if (intern_id == null)
+                {
+                    assignSkillsResponce.Suceess = false;
+                    assignSkillsResponce.Message = "Intern Id Cannot be null";
+                }
+                else
+                {
+                    OutputParameter<int> returnValue = new OutputParameter<int>();
+                    await _internDataRL.AssignSkillsToInternAsync(intern_id.Value, skill_ids, returnValue);
+                    assignSkillsResponce.Suceess = true;
+                    assignSkillsResponce.Message = "Skills Assigned Successfully";
+                }
+            }
+            catch (Exception ex)
+            {
+                assignSkillsResponce.Suceess = false;
+                assignSkillsResponce.Message = ex.Message;
+            }
+            return assignSkillsResponce;
+        }
+
+        public async Task<Responce<List<StudyFields>>> GetStudyFields()
+        {
+            Responce<List<StudyFields>> responce = new Responce<List<StudyFields>>();
+            try
+            {
+                List<StudyFields> studyFields = new List<StudyFields>();
+                var studyFieldsData = await _internDataRL.GetAllStudyFieldsAsync();
+                long noOfStudyFields = studyFieldsData.Count();
+                for (int i = 0; i < noOfStudyFields; i++)
+                {
+                    var currentItration = studyFieldsData[i];
+                    StudyFields studyField = new StudyFields()
+                    {
+                        studyFeildId = currentItration.study_field_id,
+                        StudyFeildName = currentItration.study_field_name
+                    };
+                    studyFields.Add(studyField);
+                }
+                responce.Suceess = true;
+                responce.Message = "Study Fields Data Fetched Successfully";
+                responce.Data = studyFields;
+            }
+            catch (Exception ex)
+            {
+                responce.Suceess = false;
+                responce.Message = ex.Message;
+            }
+            return responce;
+        }
     }
 }
